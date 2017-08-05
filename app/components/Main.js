@@ -1,21 +1,21 @@
 // React Dependencies
-const React = require('react');
-const Saved = require('./Main/Saved');
-const Search = require('./Main/Search');
+import React, {Component} from 'react';
+import Saved from './Main/Saved';
+import Search from './Main/Search';
 // Requiring our helper for making API calls
-const helper = require('../utils/helper');
+import helper from '../utils/helper';
 
 // Create the Main component
-class Main extends React.Component  {
+export default class Main extends Component  {
     render() {
         return (
-            <div>
-                <h1>Main Component</h1>
-                < Saved />
-                < Search />
+           <div className='container'>
+               <div className='jumbotron text-center'>
+               <h1><i className="fa fa-newspaper-o" aria-hidden="true"></i> New York Times Search</h1>
+               </div>
+                <Search />
+                <Saved />
             </div>
         )
-    }
-}
-
-module.exports = Main;
+    };
+};

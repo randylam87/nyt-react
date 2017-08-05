@@ -1,4 +1,4 @@
-const Articles = require('./models/Articles');
+const Articles = require('../models/Articles');
 
 module.exports = (app) => {
     // Servers index.html file on the root route

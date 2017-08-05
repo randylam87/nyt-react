@@ -1,0 +1,25 @@
+.jumbotron {
+  background: #20315A;
+  color: white;
+  font-weight: 700;
+}
+
+.panel-search, .panel-results-header {
+  background: #2C3E50;
+  color: white;
+}
+
+.panel-form, .panel-results {
+  border: 1px solid #2C3E50;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.btn-search {
+  background: #B4BCC2;
+  color: white;
+  margin: 3px;
+}
+
+.btn-search:hover {
+  background: #798D8F; 
+}
