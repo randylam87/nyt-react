@@ -29,12 +29,12 @@ class Search extends Component  {
             q: '',
             limit: '5',
             begin_date: '',
-            end_date: ''
+            end_date: '',
+            value: '5'
         })
         event.preventDefault();
     };
 
-    
 
     render() {
         return (

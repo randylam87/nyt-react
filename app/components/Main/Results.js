@@ -12,9 +12,10 @@ class Search extends Component {
   showSearchedArticles () {
     let id=0;
     return this.props.results.map( (result) => {
-      return <Article key={++id} article={result} />
+      return <Article key={++id} article={result} saveArticle={this.props.saveArticle} />
     })
   }
+  
   render() {
     return (
       <div className='panel  panel-results'>
