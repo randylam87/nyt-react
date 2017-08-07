@@ -22,8 +22,11 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Serve Static Files
 app.use(express.static("public"));
 
-// Connects to Mongoose server
-mongoose.connect('mongodb://localhost/nytreact');
+// Connects to Mongo server
+mongoose.connect('mongodb://heroku_73bngsrf:nk4vg13dr21d9ivnj5ha6v2pe8@ds157740.mlab.com:57740/heroku_73bngsrf');
+
+// Connects to local Mongo server
+// mongoose.connect('mongodb://localhost/nytreact');
 
 // Routes
 require('./routes/api-routes.js')(app);
