@@ -17,10 +17,8 @@ module.exports = {
         }
 
         let limit = params.limit;
-        console.log(params)
-        axios.get(`http://api.nytimes.com/svc/search/v2/articlesearch.json`, {params})
+        axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json`, {params})
             .then((result) => {
-                console.log(result)
                 let queryResult = result.data.response.docs;
                 let filteredResult = [];
 
