@@ -23,3 +23,8 @@
 .btn-search:hover {
   background: #798D8F; 
 }
+
+.articles {
+  padding: 10px;
+  border: 1px solid grey;
+}

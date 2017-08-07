@@ -7,6 +7,7 @@ module.exports = {
   output: {
     filename: "public/bundle.js"
   },
+  
 
   // This section desribes the transformations we will perform
   module: {
@@ -25,6 +26,7 @@ module.exports = {
       }
     ]
   },
+    
   // This lets us debug our react code in chrome dev tools. Errors will have lines and file names
   // Without this the console says all errors are coming from just coming from bundle.js
   devtool: "eval-source-map"

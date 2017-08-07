@@ -7,7 +7,7 @@ class Saved extends React.Component  {
         return (
             <div className='panel'>
                 <div className='panel-heading panel-results-header'>
-                    <strong><i className="fa fa-table" aria-hidden="true"></i> Top Articles</strong>
+                    <strong><i className="fa fa-floppy" aria-hidden="true"></i> Saved Articles</strong>
                 </div>
                 <div className='panel-body panel-results'>
                 </div>
