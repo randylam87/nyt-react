@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 class Search extends Component  {
     constructor(props) {
         super(props);
-        this.state = { value: '5', limit: '5'};
+        this.state = { value: '5', limit: '5', q: ''};
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
