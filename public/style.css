@@ -1,3 +1,14 @@
+body {
+  background-image: url('https://static.pexels.com/photos/374710/pexels-photo-374710.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .jumbotron {
   background: #20315A;
   color: white;
@@ -26,5 +37,16 @@
 
 .articles {
   padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   border: 1px solid grey;
+}
+
+.bg-white {
+  background: whitesmoke;
+}
+
+.ml {
+  margin-left: 30px;
 }

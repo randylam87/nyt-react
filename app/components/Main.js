@@ -73,7 +73,7 @@ class Main extends Component  {
 
     render() {
         return (
-           <div className='container'>
+           <div className='container bg-white'>
                <div className='jumbotron text-center'>
                <h1><i className="fa fa-newspaper-o" aria-hidden="true"></i> New York Times Search</h1>
                </div>

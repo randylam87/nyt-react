@@ -12,10 +12,10 @@ class Article extends Component {
 
   render() {
     return (
-        <li className='articles' >
+        <li className='articles'>
           <button className='btn btn-success btn-small' onClick={ ()=>{ this.handleClick() } }>Save</button>
-          <strong><a href={this.props.article.url}>{this.props.article.title}</a></strong>
-          
+          {'\u00A0'}
+          <strong className='ml'><a href={this.props.article.url}>{this.props.article.title}</a></strong>
         </li>
     )
   }
