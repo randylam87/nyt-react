@@ -23,10 +23,17 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("public"));
 
 // Connects to Mongo server
-mongoose.connect('mongodb://heroku_73bngsrf:nk4vg13dr21d9ivnj5ha6v2pe8@ds157740.mlab.com:57740/heroku_73bngsrf');
+mongoose.connect('mongodb://heroku_73bngsrf:nk4vg13dr21d9ivnj5ha6v2pe8@ds157740.mlab.com:57740/heroku_73bngsrf', { useMongoClient: true });
 
-// Connects to local Mongo server
-// mongoose.connect('mongodb://localhost/nytreact');
+const db = mongoose.connection;
+
+db.on('error', (err) => {
+  console.log('Mongoose Error: ', err);
+});
+
+db.once('open', () => {
+  console.log('Mongoose connection successful!');
+});
 
 // Routes
 require('./routes/api-routes.js')(app);

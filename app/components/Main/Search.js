@@ -5,7 +5,13 @@ import React, {Component} from 'react';
 class Search extends Component  {
     constructor(props) {
         super(props);
-        this.state = { value: '5', limit: '5', q: ''};
+        this.state = {
+            q: '',
+            limit: '5',
+            begin_date: '',
+            end_date: '',
+            value: '5'
+        };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
